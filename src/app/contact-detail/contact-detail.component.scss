@@ -1,0 +1,35 @@
+span{
+  font-weight: bold;
+}
+
+.media-left img{
+  height: 200px;
+  margin: 0px 10px;
+}
+
+// desktop
+@media only screen and (min-width:1024px) {
+  *{
+    font-size: large;
+  }
+
+}
+
+// tablet
+@media only screen and (max-width:1024px) and (min-width:600px){
+  .panel-default{
+    margin-bottom: 60px;
+  }
+}
+
+@media only screen and (max-width:600px){
+  *{
+    font-size: small;
+  }
+
+
+
+
+}
+
+

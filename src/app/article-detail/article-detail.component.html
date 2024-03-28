@@ -1,0 +1,29 @@
+<div  class="container">
+  <img src="{{article.image}}" alt="Image" class="img-thumbnail">
+
+  <div class="carousel-caption">
+    <h1>{{article.titre}}</h1>
+
+    <p id="description">{{article.description}}</p>
+
+    <p>Texte écrit(e) par {{article.author}} |
+      Publié le {{article.date | date:'fullDate'}}</p>
+
+    <button type="button" class="btn btn-primary" *ngFor="let categorie of article.listCategories" (click)="showCategory(categorie)" routerLink="{{'articles/category/'+categorie}}">
+      {{categorie}}
+    </button>
+
+    <button type="button" class="btn btn-info" (click)="showArticle(article.id)" routerLink="{{'articles/'+article.id}}">En savoir plus</button>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+

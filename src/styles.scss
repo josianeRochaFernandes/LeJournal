@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+  font-size: 1.5rem;
+}
+
+h1, h2{
+  font-family: Monaco;
+  color: blue;
+}
+
+.container{
+  font-family: "Arial";
+}
+
+// desktop
+@media only screen and (min-width:1024px) {
+
+}
+
+// tablet
+@media only screen and (max-width:1024px) and (min-width:600px){
+  *{
+    font-size: x-large;
+  }
+}
+
+@media only screen and (max-width:600px){
+  *{
+    font-size: small;
+  }
+
+}

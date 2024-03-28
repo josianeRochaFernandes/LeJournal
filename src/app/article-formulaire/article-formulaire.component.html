@@ -1,0 +1,58 @@
+<div class="container">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+<h1>Ajouter un nouvel article</h1>
+
+<form [formGroup]="articleForm" (ngSubmit)="addNewArticle()">
+  <div class="form-group">
+    <label for="titre">Titre:</label>
+    <input type="text" class="form-control" id="titre" formControlName="titre">
+  </div>
+
+  <div class="form-group">
+    <label for="categories">Catégories</label>
+    <select id="categories" class="form-control"[formControl]="categorieform" multiple formControlName="listCategories">
+      <option *ngFor="let categorie of categories" [value]="categorie">{{categorie}}</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="author">Acteur:</label>
+    <input type="text" class="form-control" id="author" formControlName="author">
+  </div>
+
+  <div class="form-group">
+    <label for="description">Description:</label>
+    <input type="text" class="form-control" id="description" formControlName="description">
+  </div>
+
+  <div class="form-group">
+    <label for="image">Url de l'image:</label>
+    <input type="text" class="form-control" id="image" formControlName="image">
+  </div>
+
+  <div class="form-group">
+        <label for="content1">1. Parapgraphe:</label>
+        <textarea class="form-control" id="content1" formControlName="content1" placeholder="Contenu du paragraphe 1" rows="5" ></textarea>
+  </div>
+
+  <div class="form-group">
+    <label attr.for="content2">2. Parapgraphe:</label>
+    <textarea class="form-control" id="content2" formControlName="content2" placeholder="Contenu du paragraphe 2" rows="5" ></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Ajouter</button>
+
+</form>
+  </div>
+
+  </div>
+
+
+
+  <h2>Apercu de l'article</h2>
+
+</div>
+  <app-article *ngIf="articlePreview$ | async as article" [article]="article" ></app-article>
+
+

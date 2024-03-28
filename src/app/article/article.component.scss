@@ -1,0 +1,92 @@
+.panel-heading img{
+  width:100%;
+}
+
+.container{
+  margin:auto;
+}
+
+.panel-heading p{
+  font-style: italic;
+}
+
+#description{
+  font-family: "Marker Felt";
+}
+
+
+// desktop
+@media only screen and (min-width:1024px){
+  #description{
+    font-size: x-large;
+  }
+
+  .panel-heading p{
+    font-size: medium;
+  }
+
+  .media-body p{
+    font-size: medium;
+  }
+
+  button {
+    margin-right: 20px;
+    font-size: medium;
+  }
+
+}
+
+// tablet
+@media only screen and (max-width:1024px) and (min-width:600px){
+
+  #description{
+    font-size: x-large;
+  }
+
+  .panel-heading p{
+    font-size: 22px;
+  }
+
+  .btn {
+    font-size: x-large;
+    margin-right: 20px;
+  }
+
+  .panel-body p{
+    font-size: x-large;
+  }
+  .media-left, .media-right{
+    display: contents;
+  }
+
+}
+
+// mobile
+@media only screen and (max-width:600px){
+  h1{
+    font-size: medium;
+  }
+
+  #description{
+    font-size: small;
+  }
+
+  .panel-heading p{
+    font-size: x-small;
+  }
+
+  .btn {
+    margin-right: 10px;
+    font-size: small;
+  }
+
+  .media-left, .media-right{
+    display: contents;
+  }
+
+  .panel-body p{
+    font-size: small;
+  }
+
+
+}

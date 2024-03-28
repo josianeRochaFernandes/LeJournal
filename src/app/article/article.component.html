@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <img src="{{article.image}}" alt="Image">
+      <h1>{{article.titre}}</h1>
+
+      <p id="description">{{article.description}}</p>
+
+      <p>Texte écrit(e) par {{article.author}} |
+        Publié le {{article.date | date:'fullDate'}}</p>
+
+      <button type="button" class="btn btn-primary" *ngFor="let categorie of article.listCategories" (click)="showCategory(categorie)">
+        {{categorie}}
+      </button>
+    </div>
+
+    <div class="panel-body" >
+      <div>
+          <p>{{article.content1}}</p>
+          <p>{{article.content2}}</p>
+      </div>
+    </div>
+  </div>
+</div>

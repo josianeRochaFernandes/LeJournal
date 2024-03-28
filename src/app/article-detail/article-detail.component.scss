@@ -1,0 +1,92 @@
+img{
+  width: 97%;
+}
+h1{
+  font-family: Monaco;
+  color: blue;
+}
+
+.container{
+  font-family: "Arial";
+  margin:auto;
+}
+
+#description{
+  font-family: "Marker Felt";
+}
+
+p{
+  font-style: italic;
+}
+
+.carousel-caption{
+  position: relative;
+  left:0;
+  right:0;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  color: black;
+  text-shadow: none;
+}
+
+// desktop
+@media only screen and (min-width:1024px){
+
+  #description{
+    font-size: x-large;
+  }
+
+  p{
+    font-size: large;
+  }
+
+  button{
+    margin-right: 20px;
+    font-size: large;
+  }
+
+
+}
+
+// tablet
+@media only screen and (max-width:1024px) and (min-width:600px){
+
+  h1{
+    font-size: x-large;
+  }
+  #description{
+    font-size: medium;
+  }
+
+  p{
+    font-size: small;
+  }
+
+  button {
+    font-size: medium;
+    margin-right: 10px;
+  }
+
+}
+
+// mobile
+@media only screen and (max-width:600px){
+
+  h1{
+    font-size: large;
+  }
+
+  p{
+    font-size: xx-small;
+  }
+
+  #description{
+    font-size: small
+  }
+
+  button {
+    margin: 5px;
+    font-size: small;
+  }
+
+}

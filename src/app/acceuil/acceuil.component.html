@@ -1,0 +1,16 @@
+<div class="container">
+  <img src="assets/logo.png" width="50%">
+  <h1>Voici tous les catégories: </h1>
+  <ul class="nav nav-pills">
+    <li *ngFor="let categorie of listCategorie" >
+      <button type="button" class="btn btn-primary" (click)="showCategory(categorie)">
+        {{categorie}}
+      </button>
+
+    </li>
+  </ul>
+
+
+<app-article-list [listArticle]="listArticle"></app-article-list>
+</div>
+

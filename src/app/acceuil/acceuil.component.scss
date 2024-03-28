@@ -1,0 +1,41 @@
+a{
+  font-size: large;
+}
+
+img{
+  justify-content: center;
+  width: 100%;
+}
+
+.nav{
+  margin-bottom: 10px;
+}
+
+button{
+  margin: 10px;
+  font-size: large;
+}
+
+// desktop
+@media only screen and (min-width:1024px) {
+}
+
+// tablet
+@media only screen and (max-width:1024px) and (min-width:600px){
+  button{
+    margin: 5px;
+    font-size: large;
+  }
+}
+
+@media only screen and (max-width:600px){
+
+  h1{
+    font-size: large;
+  }
+
+  button{
+    margin: 5px;
+    font-size: medium;
+  }
+}

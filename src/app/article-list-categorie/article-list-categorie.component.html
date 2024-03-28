@@ -1,0 +1,14 @@
+<div class="container">
+<h1>Listes des articles de catégorie {{nameCategory}}</h1>
+
+  <label>Choisissez une catégorie: </label>
+  <select (ngModelChange)="showCategory($event)"  [(ngModel)]="categorie">
+    <option *ngFor="let categorie of categories" [value]="categorie">{{categorie}}</option>
+  </select>
+
+  <app-article-list [listArticle]="articleCategorie"></app-article-list>
+
+  <div *ngIf="articleCategorie.length==0">
+    <p class="alert-info">Il n'existe pas d'article!</p>
+  </div>
+</div>
